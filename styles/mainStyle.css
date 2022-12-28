@@ -16,26 +16,23 @@ html, body {
 }
 
 #instructions-container {
-   width: 50%; 
-   height: 253px;
-   padding-left: 0.5em;
+   height: 50%; 
+   width: 100%;
    position: absolute;
-   top: 50%;
-   margin-top: -126.5px;
+   top: 50%; left: 50%;
+   transform: translate(-50%,-55%);
+   padding-left: 3em;
    
    color: #e7eafb;
    text-align: center;
-   /* background-color: #202020; */
    font-size: medium;
 }
 
 #stopwatch-container {
-    width: 50%; 
-    height: 253px;
+    height: 50%; 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -126.5px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,10%);
 
     color: #e7eafb;
     text-align: center;
@@ -51,16 +48,23 @@ html, body {
 }
 
 li {
-    padding: 0.25em;
-    font-size: large;
+    padding: 0.1em;
+    padding-left: 1em;
+    font-size: 1.5em;
+}
+
+li span {
+    display:block;
+    margin-left:-3em;
 }
 
 .current-instruction {
-    font-size: larger;
-    color: red
+    font-size: 2.25em;
+    color: red;
+    transform: translate(+2%,0%);
 }
 
 .completed-instruction {
-    font-size: large;
+    font-size: 1.5em;
     text-decoration: line-through;
 }
